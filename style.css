@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.h1 {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 60px;
+    padding: 120px auto 0px;
+}
+
+h2 {
+    font-weight: 400 !important;
+    width: 30ch;
+    font-size: 32px;
+}
+
+center {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.flex_active {
+    max-height: 125px;
+    overflow: hidden;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 32px;
+    background: rgba(241, 241, 241, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 40px;
+    overflow: hidden;
+    transition: max-height 0.5s !important;
+}
+
+.r img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    padding: 16px 12px;
+}
+
+
+
+.column {
+    width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+}
+
+.l h1 {
+    color: linear-gradient(310deg, rgba(2, 0, 36, 1) 0%, rgba(37, 37, 76, 1) 5.48%, rgba(106, 109, 189, 1) 102.12%);
+}
+
+.r {
+    border-radius: 50%;
+    rotate: 0deg;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(310deg, rgba(2, 0, 36, 1) 0%, rgba(37, 37, 76, 1) 5.48%, rgba(106, 109, 189, 1) 102.12%);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    padding: 14px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+    transition: 0.4s;
+    outline: none;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: xx-large;
+}
+
+.rotate {
+    rotate: 180deg;
+    outline: none;
+}
